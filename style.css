@@ -62,6 +62,20 @@ font-size: 2vh;
 
     margin-top: 15px;
 }
+.boton-amazon,.boton-mercado{
+    padding: 5px 0px;
+}
+.boton-amazon:hover, .boton-mercado:hover{
+color: aliceblue;
+cursor: pointer;
+font-weight: 700;
+}
+.boton-amazon:hover{
+    background-color: rgb(255 153 0);
+}
+.boton-mercado:hover{
+    background-color: rgb(238 209 48);
+}
 /*pagina el duque y yo*/
 .sipnosis-libro{
     margin: 5% 10%;
@@ -76,11 +90,11 @@ font-size: 2vh;
 .sipnosis-libro img{
     padding-top: 30px;
 }
-.contenedor-back{
+.contenedor-back, .contenedor-contacto{
     display: block;
     padding-left: 50%;
     padding-bottom: 5%;
 }
-.back{
+.back,.contacto{
     font-size: 4vh;
 }
