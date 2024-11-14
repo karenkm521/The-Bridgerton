@@ -4,36 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Los Bridgerton</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Protest+Strike&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-<h1 style="text-align: center; font-family:Pacifico, regular;" >Libros de los Bridgerton </h1>
-<br>
-<img src="imagenes/Portada-libros.png" alt="Portada Bridgerton" style="width: 100%;">
+        <h1> 📚 Libros de los Bridgerton 📚</h1>
+        <img src="imagenes/Portada-libros.png" alt="Portada Bridgerton" style="width: 100%;">
     </header>
     <main>
+<!-- Biografia Autora -->
+        <div class="text-autora">
+            <img src="imagenes/autora.jpg" alt="Foto de la Autora Julian Quinn" class="autora">
+            <h3> Julia Quinn</h3>
+            <p>Julia Quinn, nacida como Julie Cotler el 12 de enero de 1970, es una reconocida autora estadounidense de novelas románticas históricas. Creció entre Nueva Inglaterra y California, y desde temprana edad mostró una profunda pasión por la literatura, escribiendo sus primeros capítulos a los 12 años. Se graduó en Historia del Arte en la Universidad de Harvard y, aunque inicialmente consideró una carrera en medicina, se volcó a la escritura luego del éxito de sus primeras novelas, publicando bajo su famoso seudónimo.                </p>  
+            <p>Hoy en día, Quinn es celebrada por sus heroínas feministas, diálogos ingeniosos y por su habilidad para combinar humor y romance en historias que han cautivado a lectores en todo el mundo. Su obra más célebre, la serie Bridgerton, fue adaptada para Netflix por Shondaland, convirtiéndose en un fenómeno global. Con sus libros traducidos a 41 idiomas y 19 apariciones en la lista de bestsellers del New York Times, Quinn sigue siendo una de las voces más influyentes del género romántico. Vive en Estados Unidos con su esposo e hijos, inspirando a nuevas generaciones de lectores y escritores mientras continúa escribiendo historias que celebran la pasión y la inteligencia.</p>
+        </div>        
+<!-- Tabla -->
+        <h2> Serie Completa de Novelas Los Bridgerton </h2>
         <table border="">
             <tr>
+                <th>Protagonista</th>
                 <th>Titulo</th>
                 <th>Portada del Libro</th>
                 <th>Precio</th> 
                 <th>Comprar</th>
             </tr>
-                <td>El Duque y Yo</td>
-                <td><img src="imagenes/Book-1.jpg" alt=" Portada libro el duque y yo" style="width: 50%;"></td>
-                <td>$350MNX</td>
-                <td> 
-                    <button onclick="window.open('https://www.amazon.com.mx/El-duque-Bridgerton-Julia-Quinn/dp/8417421114/ref=sr_1_2?dib=eyJ2IjoiMSJ9.QwvJPK4pIRD4dHSsaDdXIDmRFuj89kpqnkAnN0rxUjrxhAYWG8I2XTUNz7ojFMlwU6sgpyQmE_haIz0WwGBp5P9sPAAWREUv2-VFTFZfkCuXjGxkeIIz4qJZf7HPaS7bZVnBmdqfwNcw4fb3oRDFWTrByCnX8t2LLkSeiPbGDpty8UqelIScz4cFbPxImD0edOy2J3xR36L-CW2DYOo1u9pn5nHwZMIhaXro-tftBYqRDVJilI34RmQ55qCyw0Zxxq2hGOUI63moKGPzDE8iiemdxEOlw8KSTiKO38x-0UI.-8y3G_TPKvHApvxKvYEQsZ4_IMtvHRX3VpOV_B5_e1M&dib_tag=se&keywords=bridgerton+saga+completa&qid=1731464152&sr=8-2&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b', '_blank');">
-                        Ver libro en Amazon
-                    </button>  
+                <td><img src="imagenes/protagonista-1.jpg" alt="Daphne Bridgerton" class="foto-protagonista">
+                <h4> Daphne Bridgerton</h4></td>
+                <td><a href="pages/libro-1.html#libro-1"> El Duque y Yo</a></td>
+                <td><img src="imagenes/Book-1.jpg" alt=" Portada libro el duque y yo" class="portada-libros" ></td>   
+                <td>$332 MNX</td>
+                <td class="botones-libros">  
+                    <button  onclick="window.open('https://www.amazon.com.mx/El-duque-Bridgerton-Julia-Quinn/dp/8417421114/ref=sr_1_2?dib=eyJ2IjoiMSJ9.QwvJPK4pIRD4dHSsaDdXIDmRFuj89kpqnkAnN0rxUjrxhAYWG8I2XTUNz7ojFMlwU6sgpyQmE_haIz0WwGBp5P9sPAAWREUv2-VFTFZfkCuXjGxkeIIz4qJZf7HPaS7bZVnBmdqfwNcw4fb3oRDFWTrByCnX8t2LLkSeiPbGDpty8UqelIScz4cFbPxImD0edOy2J3xR36L-CW2DYOo1u9pn5nHwZMIhaXro-tftBYqRDVJilI34RmQ55qCyw0Zxxq2hGOUI63moKGPzDE8iiemdxEOlw8KSTiKO38x-0UI.-8y3G_TPKvHApvxKvYEQsZ4_IMtvHRX3VpOV_B5_e1M&dib_tag=se&keywords=bridgerton+saga+completa&qid=1731464152&sr=8-2&ufe=app_do%3Aamzn1.fos.de93fa6a-174c-4df7-be7c-5bc8e9c5a71b', '_blank');">
+                        Amazon
+                    </button>
+                    <button onclick="window.open('https://www.mercadolibre.com.mx/el-duque-y-yo-bridgerton-de-quinn-julia-serie-bridgerton-vol-10-editorial-titania-tapa-blanda-edicion-1-en-espanol-2021/p/MLM21450564#polycard_client=search-nordic&wid=MLM3265304536&sid=search&searchVariation=MLM21450564&position=3&search_layout=stack&type=product&tracking_id=ac7d79b4-cc01-4cac-8bf8-f84f51a41f70', '_blank');">
+                        Mercado Libre
+                    </button>     
                 </td>
             <tr>
+                <td><img src="imagenes/protagonista-2.jpg" alt="Anthony Bridgerton" class="foto-protagonista">
+                    <h4> Anthony Bridgerton</h4></td>
+                <td><a href="pages/libro-1.html#libro-2">El Vizconde que me amó</a>
+                    </td>
+                <td><img src="imagenes/Book-2.jpg" alt="Portada libro el Vizconde que me amó" class="portada-libros"></td>
+                <td>$503 MNX </td>
+                <td class="botones-libros">
+                    <button onclick="window.open('https://www.amazon.com.mx/El-Vizconde-Que-Me-Amo/dp/8416327823', '_blank');">
+                        Ver libro en Amazon
+                    </button>
+                    <button onclick="window.open('https://www.mercadolibre.com.mx/bridgerton-2-el-vizconde-que-me-amo-una-romantica-y-divertida-saga-familiar-de-julia-quinn-serie-bridgerton-vol-20-editorial-titania-tapa-blanda-edicion-10-en-espanol-2021/p/MLM24161492#polycard_client=search-nordic&wid=MLM2122912981&sid=search&searchVariation=MLM24161492&position=2&search_layout=stack&type=product&tracking_id=dd6e6a89-b113-42cc-bea1-9929d986fb56s', '_blank');">
+                        Mercado Libre
+                    </button> 
+                </td>
             </tr>
             <tr>
+                <td><img src="imagenes/protagonista-3.jpg" alt="Benedict Bridgerton" class="foto-protagonista">
+                    <h4> Benedict Bridgerton</h4></td>
+                <td><a href="pages/libro-1.html#libro-3">Te doy mi corazón</a></td>
+                <td><img src="imagenes/Book-3.jpg" alt="Portada libro el Vizconde que me amó" class="portada-libros"></td>
+                <td>$503 MNX </td>
+                <td class="botones-libros">
+                    <button onclick="window.open('', '_blank');">
+                        Ver libro en Amazon
+                    </button>
+                    <button onclick="window.open('', '_blank');">
+                        Mercado Libre
+                    </button> 
+                </td>
+            </tr>
+            <tr>
+                <td><img src="imagenes/protagonista-4.jpg" alt="Colin Bridgerton" class="foto-protagonista">
+                    <h4> Colin Bridgerton</h4></td>
+                <td> <a href="pages/libro-1.html#libro-4">Seduciendo a Mr. Bridgerton </a></td>
+                <td><img src="imagenes/Book-4.jpg" alt="Portada libro el Vizconde que me amó" class="portada-libros"></td>
+                <td>$503 MNX </td>
+                <td class="botones-libros">
+                    <button onclick="window.open('', '_blank');">
+                        Ver libro en Amazon
+                    </button>
+                    <button onclick="window.open('', '_blank');">
+                        Mercado Libre
+                    </button> 
+                </td>
+            </tr>
+            <tr>
+                <td><img src="imagenes/protagonista-5.jpg" alt="Eloise Bridgerton" class="foto-protagonista">
+                    <h4> Eloise Bridgerton</h4></td>
+                <td>A Sir Phillip. con amor </td>
+                <td><img src="imagenes/Book-5.jpg" alt="Portada libro el Vizconde que me amó" class="portada-libros"></td>
+                <td>$503 MNX </td>
+                <td class="botones-libros">
+                    <button onclick="window.open('', '_blank');">
+                        Ver libro en Amazon
+                    </button>
+                    <button onclick="window.open('', '_blank');">
+                        Mercado Libre
+                    </button> 
+                </td>
+            </tr>
+            <tr>
+                <td><img src="imagenes/protagonista-6.jpg" alt="Francesca Bridgerton" class="foto-protagonista">
+                    <h4> Francesca Bridgerton</h4></td>
+                <td>El corazón de una Bridgerton </td>
+                <td><img src="imagenes/Book-6.jpg" alt="Portada libro el Vizconde que me amó" class="portada-libros"></td>
+                <td>$503 MNX </td>
+                <td class="botones-libros">
+                    <button onclick="window.open('', '_blank');">
+                        Ver libro en Amazon
+                    </button>
+                    <button onclick="window.open('', '_blank');">
+                        Mercado Libre
+                    </button> 
+                </td>
+            </tr>
+            <tr>
+                <td><img src="imagenes/protagonista-7.jpg" alt="Hyacinth Bridgerton" class="foto-protagonista">
+                    <h4> Hyacinth Bridgerton</h4></td>
+                <td>Por un beso </td>
+                <td><img src="imagenes/Book-7.jpg" alt="Portada libro el Vizconde que me amó" class="portada-libros"></td>
+                <td>$503 MNX </td>
+                <td class="botones-libros">
+                    <button onclick="window.open('', '_blank');">
+                        Ver libro en Amazon
+                    </button>
+                    <button onclick="window.open('', '_blank');">
+                        Mercado Libre
+                    </button> 
+                </td>
+            </tr>
+            <tr>
+                <td><img src="imagenes/protagonista-8.jpg" alt="Gregory Bridgerton" class="foto-protagonista">
+                    <h4> Gregory Bridgerton</h4></td>
+                <td>Buscando esposa </td>
+                <td><img src="imagenes/Book-8.jpg" alt="Portada libro el Vizconde que me amó" class="portada-libros"></td>
+                <td>$503 MNX </td>
+                <td class="botones-libros">
+                    <button onclick="window.open('', '_blank');">
+                        Ver libro en Amazon
+                    </button>
+                    <button onclick="window.open('', '_blank');">
+                        Mercado Libre
+                    </button> 
+                </td>
             </tr>
         </table>
         
+          
     </main>
     <footer>
 
