@@ -98,3 +98,34 @@ font-weight: 700;
 .back,.contacto{
     font-size: 4vh;
 }
+/*Pagina contacto*/
+.menu{
+    display: flex;
+    margin: 2%;
+    justify-content: center;
+}
+.menu li {
+    margin: 0 5%;
+    font-family: "Ubuntu", serif;
+    font-size: 3vh;
+}
+/*Pagina de Contacto*/
+form{
+    margin-left: 30%;
+}
+.mensaje-contacto,.politicas,.horario,.pais,.email,.nombre,.enviar{
+    font-family: "Ubuntu", serif;
+    margin-bottom: 2%;
+    font-size: 2vh;
+}
+
+.mensaje-contacto{
+    
+    display: flex;
+    flex-direction: column;
+    margin: 1% 0%;
+    width: 40%;
+}
+.mensaje-contacto label{
+    padding-bottom: 2%;
+}

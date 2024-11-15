@@ -11,10 +11,71 @@
 <body>
     <header>
         <h1> 📚 Libros de los Bridgerton 📚</h1>
-        <img src="../imagenes/Portada-libros.png" alt="Portada Bridgerton" style="width: 100%;">
+        <img src="../imagenes/Portada-libros.png" alt="Portada Bridgerton" style="width: 100%;"> 
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="libro-1.html">Sipnosis</a>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+    <main>  
+        <h2>Contactanos</h2>
+        <form action="">
+            
+            <div class="nombre">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" placeholder="Nombre+ Apellido">  
+            </div>
+            <div class="email">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="email@address.com">
+            </div>
+            <div class="pais">
+                <label for="cname">País</label>
+                <select name="cname" id="cname">
+                    <option value="mexico"> México</option> 
+                    <option value="usa">USA</option>
+                    <option value="españa">España</option>
+                    <option value="colombia">Colombia</option>
+                </select>
+            </div>
+            <div class="horario">
+                <p>Por Favor Seleccione un Horario de Contacto </p>
+                <input type="radio" id="manana" name="horario" value="manana">
+                <label for="manana"> Mañana</label>
+                <input type="radio" name="horario" id="tarde" value="tarde">
+                <label for="tarde"> Tarde</label>
+                <input type="radio" name="horario" id="noche" value="noche">
+                <label for="noche"> Noche</label>
+            </div>
+            <div class="politicas">
+                <input type="checkbox" name="politicas" id="politicas" value="true" required>
+                <label for="politicas">Aceptas Nuestros Terminos y Condiciones</label>
+            </div>
+            <div class="mensaje-contacto">
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje-contacto" cols="70" rows="10" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="enviar">
+                <input type="submit" value="Enviar">
+            </div>
+
+            
+
+
+        </form>
+    </main>
     <div class="contenedor-back">
         <a href="../index.html" class="back">⬅️Back</a>
     </div>
+
 </body>
 </html>
